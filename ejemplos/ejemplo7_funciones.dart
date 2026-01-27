@@ -65,10 +65,16 @@ void aplicarFuncion(int valor, int Function(int) funcion ) {
 
 //Función que retorna otra función (closure - clausura). 
 Function multiplicador(int n){
+  int multiplicar(int x){
+    return n * x;
+  }
+  return multiplicar;
+  /*
   return (int x) {
      return x * n;
   };
- 
+  */
+  
   // return (int x) => x * n
 }
 
